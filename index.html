@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Game Hub</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        background: linear-gradient(135deg, #4facfe, #00f2fe);
+    }
+
+    h1 {
+        color: white;
+        font-size: 2.5em;
+        margin-bottom: 40px;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    }
+
+    .button-container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 90%;
+        max-width: 400px;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    .game-button {
+        background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+        border: none;
+        padding: 20px;
+        font-size: 1.5em;
+        border-radius: 15px;
+        color: white;
+        font-weight: bold;
+        text-align: center;
+        cursor: pointer;
+        box-shadow: 0px 5px 15px rgba(0,0,0,0.2);
+        transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .game-button:hover {
+        transform: scale(1.05);
+        box-shadow: 0px 8px 20px rgba(0,0,0,0.3);
+    }
+
+    /* Different colors for each button */
+    .minesweeper {
+        background: linear-gradient(135deg, #43cea2, #185a9d);
+    }
+
+    .mathrush {
+        background: linear-gradient(135deg, #f7971e, #ffd200);
+    }
+</style>
+</head>
+<body>
+
+<h1>🎮 Game Hub</h1>
+<div class="button-container">
+    <a href="https://kazaki55.github.io/Minesweeper-/">
+        <div class="game-button minesweeper">💣 Minesweeper</div>
+    </a>
+    <a href="https://kazaki55.github.io/MathGame/">
+        <div class="game-button mathrush">🧮 Math Rush</div>
+    </a>
+</div>
+
+</body>
+</html>
